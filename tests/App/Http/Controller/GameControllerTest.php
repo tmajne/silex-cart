@@ -10,7 +10,6 @@ use Gog\Entity\Game;
 use Gog\Exception\EntityNotFoundException;
 use Mockery\CountValidator\Exception;
 
-
 class GameControllerTest extends AppTestCase
 {
     protected function setUp()

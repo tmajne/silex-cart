@@ -18,7 +18,8 @@ class WhoopsServiceProvider implements ServiceProviderInterface
     /**
      * @param Container $app
      */
-    public function register(Container $app) {
+    public function register(Container $app)
+    {
         $app['whoops.error_page_handler'] = function () {
             if (PHP_SAPI === 'cli') {
                 return new PlainTextHandler();

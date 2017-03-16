@@ -98,7 +98,6 @@ class GameController extends AppController
             $this->gameRepository->add($game);
 
             return $this->restSuccessResponse();
-
         } catch (EntityNotFoundException $e) {
             return $this->restNotFoundResponse($e->getMessage());
         }

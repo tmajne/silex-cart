@@ -16,7 +16,7 @@ class GameRouteProvider implements ControllerProviderInterface
      */
     public function connect(Application $app)
     {
-        $app['game.controller'] = function($app) {
+        $app['game.controller'] = function ($app) {
             $cartContainer =  $app['service.cart'];
 
             return new GameController($app, $cartContainer['game.repository']);

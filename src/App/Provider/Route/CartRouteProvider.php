@@ -16,7 +16,7 @@ class CartRouteProvider implements ControllerProviderInterface
      */
     public function connect(Application $app)
     {
-        $app['cart.controller'] = function($app) {
+        $app['cart.controller'] = function ($app) {
             $cartContainer =  $app['service.cart'];
 
             return new CartController(
