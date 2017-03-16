@@ -1,0 +1,47 @@
+{
+  "name": "tmajne/silex-cart",
+  "type": "project",
+  "description": "silex cart application project",
+  "keywords": ["silex", "cart", "php"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tomasz Tomczyk",
+      "email": "ttomczyk@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "silex/silex": "~2.0",
+    "filp/whoops": "^2.1",
+    "symfony/css-selector": "^3.1",
+    "tmajne/cart": "^0.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.6.x-dev",
+    "symfony/browser-kit": "^3.1",
+    "symfony/debug-bundle": "^3.1",
+    "silex/web-profiler": "^2.0",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/App"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "run": [
+      "echo 'Started web server on http://localhost:8888'",
+      "php7.1 -S localhost:8888 -t web"
+    ],
+    "cart-load-test-data": [
+      "echo 'Load test data in product storage.'",
+      "@php bin/cart_load_test_data.php"
+    ]
+  }
+}
