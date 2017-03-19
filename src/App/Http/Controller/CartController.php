@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Http\Controller;
 
-use Gog\Contract\EntityInterface;
-use Gog\Contract\Repository\CartRepositoryInterface;
-use Gog\Contract\Repository\GameRepositoryInterface;
-use Gog\Entity\Cart;
-use Gog\Exception\CartItemNotFoundException;
-use Gog\Exception\EntityNotFoundException;
-use Gog\Repository\CartRepository;
+use Nova\Contract\EntityInterface;
+use Nova\Contract\Repository\CartRepositoryInterface;
+use Nova\Contract\Repository\GameRepositoryInterface;
+use Nova\Entity\Cart;
+use Nova\Exception\CartItemNotFoundException;
+use Nova\Exception\EntityNotFoundException;
+use Nova\Repository\CartRepository;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

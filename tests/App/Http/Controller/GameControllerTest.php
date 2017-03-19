@@ -5,9 +5,9 @@ declare(strict_types = 1);
 namespace App\Test\App\Http\Controller;
 
 use App\Test\AppTestCase;
-use Gog\Contract\Repository\GameRepositoryInterface;
-use Gog\Entity\Game;
-use Gog\Exception\EntityNotFoundException;
+use Nova\Contract\Repository\GameRepositoryInterface;
+use Nova\Entity\Game;
+use Nova\Exception\EntityNotFoundException;
 use Mockery\CountValidator\Exception;
 
 class GameControllerTest extends AppTestCase

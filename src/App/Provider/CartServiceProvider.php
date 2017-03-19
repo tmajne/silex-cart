@@ -4,10 +4,10 @@ declare(strict_types = 1);
 
 namespace App\Provider;
 
-use Gog\Dao\FastCache\CartDao;
-use Gog\Dao\FastCache\GameDao;
-use Gog\Repository\CartRepository;
-use Gog\Repository\GameRepository;
+use Nova\Dao\FastCache\CartDao;
+use Nova\Dao\FastCache\GameDao;
+use Nova\Repository\CartRepository;
+use Nova\Repository\GameRepository;
 use phpFastCache\CacheManager;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

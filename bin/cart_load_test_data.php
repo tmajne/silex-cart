@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use Gog\Entity\Game;
+use Nova\Entity\Game;
 
 include_once __DIR__."/../vendor/autoload.php";
 

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Http\Controller;
 
-use Gog\Contract\EntityInterface;
-use Gog\Contract\Repository\GameRepositoryInterface;
-use Gog\Entity\Game;
-use Gog\Exception\EntityNotFoundException;
+use Nova\Contract\EntityInterface;
+use Nova\Contract\Repository\GameRepositoryInterface;
+use Nova\Entity\Game;
+use Nova\Exception\EntityNotFoundException;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 
